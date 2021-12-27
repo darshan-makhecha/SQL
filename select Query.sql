@@ -16,12 +16,12 @@ select * from dbo.staff where salary<=16000;
 select * from dbo.staff where salary>=16000;
 select * from dbo.student where rollno<>6; -- rollno 6 record display no 
 select * from dbo.staff where salary between 16000 and 19000; -- between meance center 
-select * from dbo.student where city like 'a%'; -- a name na city display 
+select * from dbo.student where city like 'a%' -- a name na city display*
 select * from dbo.staff where salary in (15000 , 19500);
 select COUNT(*) salary from dbo.staff where salary = 19500; 
 select * from dbo.staff where salary = 15000 and subject = 'asp.net'; 
 select * from dbo.staff where salary = 15000 or salary = 15500; 
-select * from dbo.staff where not salary = 16500 ; 
+select * from dbo.staff where not salary = 15000 ; 
 select * from dbo.staff where salary = 16500;
 select * from dbo.staff where salary = 15000 and (subject = 'asp.net' or subject = 'ds');
 select * from dbo.staff where salary = 15000 and (not subject = 'asp.net' or subject = 'ds');
@@ -34,3 +34,4 @@ select * from dbo.staff order by salary ;  -- default ascending
 select * from dbo.student order by city desc ; -- descending
 select * from dbo.staff order by salary , empId ;
 select * from dbo.staff order by salary asc ,  empId desc ;
+
