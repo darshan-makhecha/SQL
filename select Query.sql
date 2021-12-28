@@ -3,7 +3,7 @@ sELECT surname FROM dbo.student; -- specific field record display
 SELECT DISTINCT postalcode FROM dbo.student; -- DISTINCT means diffrent (in query display different postalcode in field )
 select count(*) city from dbo.student;	-- count city from field 
 select count(*) postalcode from dbo.student;  --  " "
-select * from dbo.staff where salary=16000;	-- where check condition
+select * from dbo.staff where	salary=16000;	-- where check condition
 	/*
 	*	WHERE clause is used to filter records.
 	*	AND and OR operators are used to filter records based on more than one condition.
