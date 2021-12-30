@@ -40,7 +40,7 @@ SELECT avg(salary) FROM dbo.Numeriuc;  -- average of salary
  select * from dbo.Numeriuc where salary between 1500 and 25000;
  select * from dbo.Numeriuc where salary not between 15000 and 25000;
  select * from dbo.staff where salary between 15000 and 20000 and subject  not in ('asp' , 'java');
- select * from dbo.student where rollno between 1 and 6 order by enrollment_no asc;
+ select * from dbo.student where rollno between 1 and 6 order by city asc;
  select * from dbo.staff where empname not between 'p' and 'e' order by empid ;
  select empname as nm from dbo.staff;
  select empname , subject + ',' + salary + ',',+ contact + ','+ empid from dbo.staff;

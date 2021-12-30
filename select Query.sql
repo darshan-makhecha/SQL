@@ -1,5 +1,5 @@
 select * from dbo.student;		--all record display
-sELECT surname FROM dbo.student; -- specific field record display
+SELECT surname FROM dbo.student; -- specific field record display
 SELECT DISTINCT postalcode FROM dbo.student; -- DISTINCT means diffrent (in query display different postalcode in field )
 select count(*) city from dbo.student;	-- count city from field 
 select count(*) postalcode from dbo.student;  --  " "
