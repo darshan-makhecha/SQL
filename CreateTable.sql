@@ -1,4 +1,4 @@
-CREATE TABLE Customers (
+/*CREATE TABLE Customers (
     Id bigint IDENTITY(1,1) PRIMARY KEY Not null, --identity means auto-increment
     FirstName nvarchar(70),
 	LastName nvarchar(100) NOT NULL,
@@ -23,3 +23,7 @@ CREATE TABLE States (
 	Name nvarchar(200) not null,
 	Country char(2) not null
 );
+
+CREATE INDEX Data_Customers_Mobile
+ON dbo.Customers (Mobile);
+*/
